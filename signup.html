@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Sign-up form</title>
+        <link rel="stylesheet" href="style_login.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="forms">
+                <div class="form input">
+                    <span class="header">Sign up</span>
+                    <form action="login.html" onsubmit="return validation()" target="_self" autocomplete="on" enctype="multipart/form-data" >
+                        <div class="input-group">
+                            <!-- <label username="email" class="label">Email:</label> -->
+                            <input type="text" id="sign_user"  placeholder="Enter Your name">
+                            <i class="uil uil-user icon"></i>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="input-group">
+                            <!-- <label username="email" class="label">Email:</label> -->
+                            <input type="email" id="sign_email" placeholder="Enter Your Email">
+                            <i class="uil uil-envelope icon"></i>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="input-group">
+                            <!-- <label username="password" class="label">Password:</label> -->
+                            <input type="password" id="sign_password" class="sign_password" placeholder="Enter your Password">
+                            <i class="uil uil-lock icon"></i>
+                            <i class="uil uil-eye-slash showHidePw"></i>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="input-group">
+                            <!-- <label username="password" class="label">Password:</label> -->
+                            <input type="password" id="SRpassword" class="SR_password" placeholder="Re-enter your Password">
+                            <i class="uil uil-lock icon"></i>
+                            <i class="uil uil-eye-slash r-showHidePw"></i>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="input-group button">
+                            <input type="submit" value="sign up">
+                        </div>
+                    </form>
+                    <div class="sign-up">
+                        <span>You already have an account? <a href="login.html" class="text"> Log in here</a></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <script src="login.js"></script> -->
+        <script src="signup_validation.js"></script> 
+        <!-- <script src="form_validation.js"></script> -->
+    </body>
+</html>

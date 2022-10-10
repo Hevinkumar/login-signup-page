@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Login form</title>
+        <link rel="stylesheet" href="style_login.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="forms">
+                <div class="form input">
+                    <span class="header">Login</span>
+                    <form action="signup.html" onsubmit="return form_validation()" target="_self" autocomplete="on" enctype="multipart/form-data" >
+                        <div class="input-group">
+                            <!-- <label username="email" class="label">Email:</label> -->
+                            <input type="email" id="email" username="email" placeholder="example@mail.com">
+                            <i class="uil uil-envelope icon"></i>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="input-group">
+                            <!-- <label username="password" class="label">Password:</label> -->
+                            <input type="password" class="password" id="password" username="password" placeholder="*********">
+                            <i class="uil uil-lock icon"></i>
+                            <i class="uil uil-eye-slash showHidePw"></i>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="captcha">
+                            <div class="preview">
+                                <label for="captcha-label"> Enter captcha </label>
+                                <div class="preview-captcha" id="preview-captcha"></div>
+                                <i type="button" onclick="create_captcha()" class="uil uil-refresh refresh"></i>
+                            </div>
+                            <div class="captcha-form ">
+                                <!-- <label username="captcha" class="label">Captcha:</label> -->
+                                <!-- <input id="show-captcha"> -->
+                                <input username="captcha" id="captcha" type="text">
+                                <!-- <button><i class="uil uil-refresh"></i></button> -->
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        <div class="check-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="checkbox" name="checkbox">
+                                <label for="checkbox" class="text">Remember me</label>
+                            </div>
+                            <a href="#" class="text">Forgot password</a>
+
+                        </div>
+                        <!-- <div class="input-group">
+                            <label username="captcha" class="label">Captcha:</label>
+                            <input id="show-captcha">
+                            <input username="captcha" id="captcha" type="password">
+                            <span class="error-message"></span>
+                        </div> -->
+                        <div class="input-group button">
+                            <input type="submit" value="Login now">
+                        </div>
+                    </form>
+                    <div class="sign-up">
+                        <span>You don't have any account? <a href="signup.html" class="text"> Sign up here</a></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="captcha.js"></script>
+        <script src="login_validation.js"></script>
+    </body>
+</html>
